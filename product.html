@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product</title>
+<link rel="stylesheet" type="css/text" href="../css/myStyle.css">
+</head>
+<body bgcolor="orange" ng-app="myApp">
+<div id="prodformctn" ng-controller="mycontroller">
+<form action="" method="post" name="prodform">
+<table>
+<tr>
+<td>Product Name </td>
+<td><input type="text" name="pname" size="20"></td>
+</tr>
+<tr>
+<td>Product Description </td>
+<td><input type="text" name="pdes" size="20"></td>
+</tr>
+<tr>
+<td>Product Manufacturing Date</td>
+<td><input type="Date" name="pmafdate" ></td>
+</tr>
+<tr>
+<td>Product Expiry Date</td>
+<td><input type="Date" name="pexdate" ></td>
+</tr>
+<tr>
+<td> choose category</td>
+<td><select ng-init=getCategories(); >
+<option ng-repeat="category in categories" value="{{category.category_Name}}">{{category.category_Name}}</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td> choose Sub category</td>
+<td><select>
+<option value="Mobile">Mobile</option>
+<option value="PowerBank">PowerBank</option>
+<option value="Data Storage">Data Storage</option>
+
+<option value="T-Shirt">T-Shirt</option>
+<option value="Kurta">Kurta</option>
+<option value="Saree">Saree</option>
+<option value="Kids Wear">Kids Wear</option>
+
+<option value="Diabetic Shoes">Diabetic Shoes</option>
+<option value="Diabetic Metre">Diabetic Metre</option>
+<option value="Blood Pressure Metre">Blood Pressure Metre</option>
+
+<option value="Dining Sets">Dining Sets</option>
+<option value="Cooker">Cooker</option>
+<option value="Knife">Knife</option>
+<option value="Glasses">Glasses</option>
+
+<option value="Cricket Bat">Cricket Bat</option>
+<option value="Cricket Ball">Cricket Ball</option>
+<option value="Hockey bat">Hockey bat</option>
+<option value="Hockey Ball">Hockey Ball</option>
+<option value="Volley Ball">Volley Ball</option>
+</select>
+</td>
+</tr>
+<tr>
+<td> choose Supplier</td>
+<td><select>
+<option value="Tom">Tom</option>
+<option value="Jack">Jack</option>
+<option value="Kamal">Kamal</option>
+<option value="Annie">Annie</option>
+<option value="Vimal">Vimal</option>
+<option value="Bimal">Bimal</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td> choose Discount</td>
+<td><select>
+<option value="Mega Offer">Mega Offer</option>
+<option value="Dewali Offer">Dewali Offer</option>
+<option value="New Year Offe">New Year Offe</option>
+<option value="X'Mas Offer">X'Mas Offer</option>
+<option value="Pongal Offer">Pongal Offer</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Enter Quantity</td>
+<td><input type="text" name="qty" size="20"></td>
+</tr>
+<tr>
+<td>Enter Ratings of product</td>
+<td><input type="text" name="rating" size="20"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="save" value="save"></td>
+</tr>
+</table>
+
+
+
+
+
+
+</form>
+
+
+
+
+</div>
+</body>
+</html>
